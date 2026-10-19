@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>VCEPU Waste Fix</name>
+  <author>XHszDHM</author>
+  <packageId>XHszDHM.VCEPUWasteFix</packageId>
+  <supportedVersions>
+    <li>1.7</li>
+  </supportedVersions>
+  <description>Fixes the "Collection was modified; enumeration operation may not execute" exception thrown by Vanilla Chemfuel Expanded - Unofficial Expansion (bambaryla.VCEPU).
+
+That mod's CompWasteProducer_ProduceWaste_Patch.Postfix drops wastepacks while iterating the ThingOwner they live in, so every mech gestator that finishes with wastepacks inside throws an InvalidOperationException and the remaining wastepacks stay stuck.
+
+This mod removes the broken postfix at startup and installs a corrected one that snapshots the matching items first. Only affects the buggy patch; no gameplay changes.</description>
+  <loadAfter>
+    <li>bambaryla.VCEPU</li>
+    <li>brrainz.harmony</li>
+  </loadAfter>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+</ModMetaData>

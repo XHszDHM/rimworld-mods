@@ -1,0 +1,22 @@
+# .NET build output
+bin/
+obj/
+build/
+*.user
+*.suo
+.vs/
+*.pdb
+*.cache
+
+# RimWorld / Steam
+*.log
+Player.log
+Player-prev.log
+
+# OS
+Thumbs.db
+.DS_Store
+
+# IDE
+.idea/
+.vscode/

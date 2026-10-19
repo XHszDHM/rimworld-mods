@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+<!-- EN: Gravship Configuration -->
+  <BG_GravshipSettings>重力飞船配置</BG_GravshipSettings>
+
+<!-- EN: Restore Mod Defaults -->
+  <BG_ModDefaults>恢复模组设置</BG_ModDefaults>
+<!-- EN: Restore Vanilla Defaults -->
+  <BG_LudeonDefaults>恢复原版设置</BG_LudeonDefaults>
+
+<!-- EN: Engine Substructure Support -->
+  <BG_GravEngine_Support>重力引擎基础支撑数</BG_GravEngine_Support>
+<!-- EN: Engine Substructure Radius -->
+  <BG_GravEngine_MaxDistance>重力引擎基础支撑范围（半径）</BG_GravEngine_MaxDistance>
+
+<!-- EN: Grav Field Extender Support -->
+  <BG_GravFieldExtender_Support>重力场扩展器支撑数</BG_GravFieldExtender_Support>
+<!-- EN: Maximum Grav Field Extenders -->
+  <BG_GravFieldExtender_Max>最大重力场扩展器数量</BG_GravFieldExtender_Max>
+<!-- EN: Grav Field Extender Radius -->
+  <BG_GravFieldExtender_MaxDistance>重力场扩展器支撑范围（半径）</BG_GravFieldExtender_MaxDistance>
+<!-- EN: Grav Field Extender Max Distance from Engine -->
+  <BG_GravFieldExtender_MaxDistanceFromEngine>重力场扩展器与重力引擎的最大距离</BG_GravFieldExtender_MaxDistanceFromEngine>
+
+<!-- EN: ChemFuel Tank Capacity -->
+  <BG_ChemFuelTankSize>化学燃料储罐容量</BG_ChemFuelTankSize>
+<!-- EN: Large ChemFuel Tank Capacity -->
+  <BG_LargeChemFuelTankSize>大型化学燃料储罐容量</BG_LargeChemFuelTankSize>
+
+<!-- EN: Small Thruster Effective Range -->
+  <BG_SmallThrusterRange>小型推进器有效射程</BG_SmallThrusterRange>
+<!-- EN: Large Thruster Effective Range -->
+  <BG_LargeThrusterRange>大型推进器有效射程</BG_LargeThrusterRange>
+<!-- EN: Maximum Small Thrusters -->
+  <BG_MaxThrustersSmall>最大小型推进器数量</BG_MaxThrustersSmall>
+<!-- EN: Maximum Large Thrusters -->
+  <BG_MaxThrustersLarge>最大大型推进器数量</BG_MaxThrustersLarge>
+
+<!-- EN: Gravcore Power Cell Output -->
+  <BG_GravCorePowerCellPower>重力引擎电力输出</BG_GravCorePowerCellPower>
+
+<!-- EN: Max Grav Shield Generators -->
+  <BG_GravShieldMaxGenerators>最大重力护盾发生器数量</BG_GravShieldMaxGenerators>
+<!-- EN: Grav Shield Radius -->
+  <BG_GravShieldRadius>重力护盾半径</BG_GravShieldRadius>
+<!-- EN: Grav Shield Health -->
+  <BG_GravShieldHealth>重力护盾生命值</BG_GravShieldHealth>
+
+<!-- EN: Apply Settings Now! -->
+  <BG_ApplySettingsNow>立即应用设置</BG_ApplySettingsNow>
+
+</LanguageData>
