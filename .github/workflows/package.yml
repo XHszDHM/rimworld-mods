@@ -19,7 +19,7 @@ jobs:
           mkdir -p dist
           for d in mods/*/; do
             name=$(basename "$d")
-            zip -r "dist/$name.zip" "$name" -x '*/bin/*' '*/obj/*' '*/build/*'
+            (cd mods && zip -r "../dist/$name.zip" "$name" -x '*/bin/*' '*/obj/*' '*/build/*')
           done
           ls -la dist
 
