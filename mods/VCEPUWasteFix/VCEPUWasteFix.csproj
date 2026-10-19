@@ -12,15 +12,19 @@
     <Optimize>true</Optimize>
     <NoWarn>NU1701;CS0618;CS8981</NoWarn>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+
+    <!-- Override with: dotnet build -p:RimWorldDir="C:\path\to\RimWorld" -->
+    <RimWorldDir Condition="'$(RimWorldDir)' == ''">E:\steam\steamapps\common\RimWorld</RimWorldDir>
+    <HarmonyDir Condition="'$(HarmonyDir)' == ''">E:\steam\steamapps\workshop\content\294100\2009463077\1.7\Assemblies</HarmonyDir>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Source\VCEPUWasteFix.cs" />
     <Reference Include="Assembly-CSharp">
-      <HintPath>E:\steam\steamapps\common\RimWorld\Assembly-CSharp.dll</HintPath>
+      <HintPath>$(RimWorldDir)\Assembly-CSharp.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="0Harmony">
-      <HintPath>E:\steam\steamapps\workshop\content\294100\2009463077\1.7\Assemblies\0Harmony.dll</HintPath>
+      <HintPath>$(HarmonyDir)\0Harmony.dll</HintPath>
       <Private>false</Private>
     </Reference>
   </ItemGroup>

@@ -1,0 +1,30 @@
+name: Package Mods
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Package each mod
+        run: |
+          mkdir -p dist
+          for d in mods/*/; do
+            name=$(basename "$d")
+            zip -r "dist/$name.zip" "$name" -x '*/bin/*' '*/obj/*' '*/build/*'
+          done
+          ls -la dist
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*.zip
+          generate_release_notes: true
