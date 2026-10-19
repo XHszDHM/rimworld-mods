@@ -19,7 +19,9 @@ jobs:
           mkdir -p dist
           for d in mods/*/; do
             name=$(basename "$d")
-            (cd mods && zip -r "../dist/$name.zip" "$name" -x '*/bin/*' '*/obj/*' '*/build/*')
+            pkg=$(grep -m1 -oP '(?<=<packageId>)[^<]+' "$d/About/About.xml" 2>/dev/null | tr -d ' \r\n')
+            slug=${pkg:-$name}
+            (cd mods && zip -r "../dist/$slug.zip" "$name" -x '*/bin/*' '*/obj/*' '*/build/*')
           done
           ls -la dist
 
